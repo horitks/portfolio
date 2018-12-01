@@ -17,45 +17,36 @@
         <div class="columns">
           <div class="column">
             <a class="button is-large" href="https://github.com/horitks">
-              <b-icon
-                icon="github-circle"
-                size="is-large"
-                type="" />
+              <b-icon icon="github-circle" size="is-large" type/>
               <span>GitHub</span>
             </a>
           </div>
-          <div class="column display-none" />
-          <div class="column display-none" />
+          <div class="column display-none"/>
+          <div class="column display-none"/>
           <div class="column">
             <a class="button is-large" href="https://speakerdeck.com/t_pori418">
-              <b-icon
-                icon="message-bulleted"
-                size="is-large"
-                type="" />
-              <span>Speaker<br>Deck</span>
+              <b-icon icon="message-bulleted" size="is-large" type/>
+              <span>Speaker
+                <br>Deck
+              </span>
             </a>
           </div>
         </div>
         <div class="columns">
-          <div class="column display-none" />
+          <div class="column display-none"/>
           <div class="column">
             <a class="button is-large" href="https://twitter.com/t_pori418?lang=ja">
-              <b-icon
-                icon="twitter-circle"
-                size="is-large"
-                type="" />
+              <b-icon icon="twitter-circle" size="is-large" type/>
               <span>Twitter</span>
             </a>
           </div>
           <div class="column">
             <a class="button is-large" href="https://poriweb.hatenablog.com/">
-              <hatena-icon
-                width="53"
-                height="72" />
+              <hatena-icon width="53" height="72"/>
               <span>Blog</span>
             </a>
           </div>
-          <div class="column display-none" />
+          <div class="column display-none"/>
         </div>
       </h2>
     </div>
@@ -104,7 +95,36 @@ export default {
 }
 
 .button:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 50px gray;
+}
+
+.button:hover:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: solid thin white;
+  animation: wave 2s infinite;
+}
+
+@keyframes wave {
+  from {
+    top: 50%;
+    left: 50%;
+    width: 0%;
+    height: 0%;
+    box-shadow: 0 0 100px inset white;
+  }
+  to {
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
