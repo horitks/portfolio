@@ -26,8 +26,10 @@
           <div class="column">
             <a class="button is-large" href="https://speakerdeck.com/t_pori418">
               <b-icon icon="message-bulleted" size="is-large" type/>
-              <span>Speaker
-                <br>Deck
+              <span class="is-size-5">
+                Speaker
+                <br>
+                Deck
               </span>
             </a>
           </div>
