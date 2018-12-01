@@ -20,14 +20,11 @@ module.exports = {
       {
         hid: 'keywords',
         name: 'keywords',
-        content:
-          'poriweb,pori,t_hori418,Web,Vue.js'
+        content: 'poriweb,pori,t_hori418,Web,Vue.js'
       },
       { hid: 'author', name: 'author', content: 'pori' }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
       {
         src:
@@ -43,14 +40,9 @@ module.exports = {
 
   loading: { color: '#fff' },
 
-  css: [
-    {src: '@/assets/main.scss', lang: 'scss' }
-  ],
+  css: [{ src: '@/assets/main.scss', lang: 'scss' }],
 
-  plugins: [
-    '@/plugins/axios',
-    '@/plugins/sanitize'
-  ],
+  plugins: ['@/plugins/axios', '@/plugins/sanitize'],
 
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
@@ -59,8 +51,7 @@ module.exports = {
     'nuxt-buefy'
   ],
 
-  axios: {
-  },
+  axios: {},
 
   build: {
     extend(config, ctx) {
