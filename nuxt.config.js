@@ -42,7 +42,11 @@ module.exports = {
 
   css: [{ src: '@/assets/main.scss', lang: 'scss' }],
 
-  plugins: ['@/plugins/axios', '@/plugins/sanitize'],
+  plugins: [
+    '@/plugins/axios',
+    '@/plugins/sanitize',
+    { src: '~plugins/ga.js', ssr: false }
+  ],
 
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
