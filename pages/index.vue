@@ -59,6 +59,7 @@
 import HatenaIcon from '@/components/icons/HatenaIcon.vue'
 
 export default {
+  transition: 'slide-left',
   components: {
     HatenaIcon
   }

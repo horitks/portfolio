@@ -44,6 +44,7 @@ module.exports = {
   loading: { color: '#fff' },
 
   css: [
+    {src: '@/assets/main.scss', lang: 'scss' }
   ],
 
   plugins: [

@@ -73,9 +73,7 @@
 
 <script>
 export default {
-  // created() {
-  //   alert(this.$route.path)
-  // }
+  transition: 'slide-right'
 }
 </script>
 
