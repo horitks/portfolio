@@ -38,6 +38,10 @@ module.exports = {
     ]
   },
 
+  env: {
+    gaTrackingId: process.env.GA_TRACKING_ID || ''
+  },
+
   loading: { color: '#fff' },
 
   css: [{ src: '@/assets/main.scss', lang: 'scss' }],
