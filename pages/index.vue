@@ -32,7 +32,7 @@
                 icon="message-bulleted"
                 size="is-large"
                 type="" />
-              <span>speaker<br>deck</span>
+              <span>Speaker<br>Deck</span>
             </a>
           </div>
         </div>

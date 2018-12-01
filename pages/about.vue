@@ -48,9 +48,10 @@
               <span class="infomation-title-text">Links</span>
             </h1>
             <p>・<a href="https://github.com/horitks">github</a></p>
-            <p>・<a href="https://speakerdeck.com/t_pori418">speaker deck</a></p>
+            <p>・<a href="https://speakerdeck.com/t_pori418">Speaker Deck</a></p>
             <p>・<a href="https://twitter.com/t_pori418?lang=ja">twitter</a></p>
             <p>・<a href="https://poriweb.hatenablog.com/">blog</a></p>
+            <p>・<a href="https://teratail.com/users/thori">teratail</a></p>
           </div>
           <div class="infomation">
             <h1 class="title">
