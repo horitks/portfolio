@@ -135,7 +135,7 @@ export default {
 }
 
 @media screen and (max-width: 640px) {
-  .button a {
+  .button {
     pointer-events: none;
   }
 }
