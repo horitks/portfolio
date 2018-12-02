@@ -9,11 +9,17 @@
             </figure>
             <br>
             <h1 class="title">
-              pori(@t_pori418)
+              Takashi Hori
             </h1>
           </div>
         </div>
         <div class="column">
+          <div class="infomation">
+            <h1 class="title">
+              <span class="infomation-title-text">PORI's Web Site</span>
+            </h1>
+            <p>このサイトはpori(@t_pori418)の個人サイトです。</p>
+          </div>
           <div class="infomation">
             <h1 class="title">
               <b-icon

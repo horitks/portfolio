@@ -1,7 +1,7 @@
 {
   "name": "poriweb",
   "version": "1.0.0",
-  "description": "poriweb.com",
+  "description": "pori(@t_pori418)の個人サイトです。開発したもの等を載せていきます。主な技術ネタはVue.js/Laravel/AWSなど。",
   "author": "pori",
   "private": true,
   "browserslist": [
