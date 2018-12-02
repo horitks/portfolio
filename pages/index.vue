@@ -26,10 +26,8 @@
           <div class="column">
             <a class="button is-large" href="https://speakerdeck.com/t_pori418">
               <b-icon icon="message-bulleted" size="is-large" type/>
-              <span class="is-size-5">
-                Speaker
-                <br>
-                Deck
+              <span class="is-size-5">Speaker
+                <br>Deck
               </span>
             </a>
           </div>
@@ -133,6 +131,12 @@ export default {
 @media screen and (max-width: 768px) {
   .display-none {
     display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .button a {
+    pointer-events: none;
   }
 }
 </style>
