@@ -40,6 +40,13 @@
           </div>
         </header>
         <nuxt/>
+        <footer class="hero-foot">
+          <div class="content has-text-centered">
+            <small>
+              Copyright © Takashi Hori All Rights Reserved.
+            </small>
+          </div>
+        </footer>
       </section>
     </transition>
   </div>
