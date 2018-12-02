@@ -135,8 +135,10 @@ export default {
 }
 
 @media screen and (max-width: 640px) {
-  .button {
-    pointer-events: none;
+  .button:hover:after,
+  .button:active:after,
+  .button:focus:after {
+    display: none;
   }
 }
 </style>
