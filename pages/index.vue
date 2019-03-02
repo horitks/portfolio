@@ -1,6 +1,8 @@
 <template>
   <div class="hero-body">
-    <div class="container has-text-centered">
+    <div
+      :class="{ 'smart-device': device !== 'other' }"
+      class="container has-text-centered">
       <div class="columns is-mobile is-centered">
         <div class="column is-narrow">
           <figure class="image is-128x128 main-icon">
@@ -13,42 +15,40 @@
           </figure>
         </div>
       </div>
-      <h2 class="subtitle">
-        <div class="columns">
-          <div class="column">
-            <a class="button is-large" href="https://github.com/horitks">
-              <b-icon icon="github-circle" size="is-large" type/>
-              <span>GitHub</span>
-            </a>
-          </div>
-          <div class="column display-none"/>
-          <div class="column display-none"/>
-          <div class="column">
-            <a class="button is-large" href="https://speakerdeck.com/t_pori418">
-              <b-icon icon="message-bulleted" size="is-large" type/>
-              <span class="is-size-5">Speaker
-                <br>Deck
-              </span>
-            </a>
-          </div>
+      <div class="columns">
+        <div class="column">
+          <a class="button is-large" href="https://github.com/horitks">
+            <b-icon icon="github-circle" size="is-large" type/>
+            <span>GitHub</span>
+          </a>
         </div>
-        <div class="columns">
-          <div class="column display-none"/>
-          <div class="column">
-            <a class="button is-large" href="https://twitter.com/t_pori418?lang=ja">
-              <b-icon icon="twitter-circle" size="is-large" type/>
-              <span>Twitter</span>
-            </a>
-          </div>
-          <div class="column">
-            <a class="button is-large" href="https://poriweb.hatenablog.com/">
-              <hatena-icon width="53" height="72"/>
-              <span>Blog</span>
-            </a>
-          </div>
-          <div class="column display-none"/>
+        <div class="column display-none"/>
+        <div class="column display-none"/>
+        <div class="column">
+          <a class="button is-large" href="https://speakerdeck.com/t_pori418">
+            <b-icon icon="message-bulleted" size="is-large" type/>
+            <span class="is-size-5">Speaker
+              <br>Deck
+            </span>
+          </a>
         </div>
-      </h2>
+      </div>
+      <div class="columns">
+        <div class="column display-none"/>
+        <div class="column">
+          <a class="button is-large" href="https://twitter.com/t_pori418?lang=ja">
+            <b-icon icon="twitter-circle" size="is-large" type/>
+            <span>Twitter</span>
+          </a>
+        </div>
+        <div class="column">
+          <a class="button is-large" href="https://poriweb.hatenablog.com/">
+            <hatena-icon width="53" height="72"/>
+            <span>Blog</span>
+          </a>
+        </div>
+        <div class="column display-none"/>
+      </div>
     </div>
   </div>
 </template>
@@ -60,6 +60,11 @@ export default {
   transition: 'slide-left',
   components: {
     HatenaIcon
+  },
+  computed: {
+    device() {
+      return this.$getDevice()
+    }
   }
 }
 </script>
@@ -111,6 +116,14 @@ export default {
   animation: wave 2s infinite;
 }
 
+.smart-device {
+  .button:hover:after,
+  .button:active:after,
+  .button:focus:after {
+    display: none;
+  }
+}
+
 @keyframes wave {
   from {
     top: 50%;
@@ -130,14 +143,6 @@ export default {
 
 @media screen and (max-width: 768px) {
   .display-none {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .button:hover:after,
-  .button:active:after,
-  .button:focus:after {
     display: none;
   }
 }

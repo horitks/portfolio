@@ -49,6 +49,7 @@ module.exports = {
   plugins: [
     '@/plugins/axios',
     '@/plugins/sanitize',
+    '@/plugins/utils',
     { src: '~plugins/ga.js', ssr: false }
   ],
 
