@@ -28,9 +28,10 @@
                 type="" />
               <span class="infomation-title-text">Profile</span>
             </h1>
+            <p>マルチワーカー</p>
             <p>群馬在住ですが、都内の案件をメインでやっています。都内に出ることも多いです。</p>
-            <p>主に業務Webシステム構築をしています。</p>
-            <p>現在はVue.js/Laravelを使用したSPA/API構成でのwebアプリケーション開発がメインです。環境構築、DB設計からフロントエンド、サーバーサイド共実装、リリース整備などわりと幅広く触っています。</p>
+            <p>業務Webシステム構築/Webサービス開発をしています。</p>
+            <p>現在はVue.js/Laravelを使用したSPA/API構成でのwebアプリケーション開発がメインです。また、AWS等を利用したアーキテクト検討/設計/構築等も行なっています。環境構築、DB設計からフロントエンド、サーバーサイド共実装、リリース整備などわりと幅広く触っています。</p>
           </div>
           <div class="infomation">
             <h1 class="title">
@@ -40,10 +41,10 @@
                 type="" />
               <span class="infomation-title-text">Skill</span>
             </h1>
-            <p>AWS/docker/vagrant/nginx/apache http server</p><br>
-            <p>MySQL/SQL Server/DynamoDB</p><br>
-            <p>html5/css3/scss/JavaScript/TypeScript/PHP/python</p><br>
-            <p>Vue.js/React.js/AngularJS/Laravel/CodeIgniter</p><br>
+            <p>AWS/GCP/docker/vagrant/nginx/apache http server</p><br>
+            <p>MySQL/SQL Server/DynamoDB/Firestore</p><br>
+            <p>html5/css3/scss/JavaScript/TypeScript/PHP/Python</p><br>
+            <p>Vue.js/React.js/AngularJS/Laravel/CodeIgniter/Django</p><br>
           </div>
           <div class="infomation">
             <h1 class="title">
@@ -69,7 +70,7 @@
             </h1>
             <p>Email: t.pori418@gmail.com</p>
             <br>
-            <p>or Twitter DM</p>
+            <p>or <a href="https://twitter.com/t_pori418?lang=ja">Twitter</a> DM</p>
           </div>
         </div>
       </div>
