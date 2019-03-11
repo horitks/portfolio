@@ -44,7 +44,8 @@
             <p>AWS/GCP/docker/vagrant/nginx/apache http server</p><br>
             <p>MySQL/SQL Server/DynamoDB/Firestore</p><br>
             <p>html5/css3/scss/JavaScript/TypeScript/PHP/Python</p><br>
-            <p>Vue.js/React.js/AngularJS/Laravel/CodeIgniter/Django</p><br>
+            <p>Vue.js/Nuxt.js/React.js/AngularJS/Angular/Laravel/CodeIgniter/Django</p><br>
+			<p>※ものによって能力に差があります。</p><br>
           </div>
           <div class="infomation">
             <h1 class="title">
