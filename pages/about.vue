@@ -54,11 +54,11 @@
                 type="" />
               <span class="infomation-title-text">Links</span>
             </h1>
-            <p>・<a href="https://github.com/horitks">github</a></p><br>
-            <p>・<a href="https://speakerdeck.com/t_pori418">Speaker Deck</a></p><br>
-            <p>・<a href="https://twitter.com/t_pori418?lang=ja">twitter</a></p><br>
-            <p>・<a href="https://poriweb.hatenablog.com/">blog</a></p><br>
-            <p>・<a href="https://teratail.com/users/thori">teratail</a></p><br>
+            <p><a href="https://github.com/horitks">github</a></p><br>
+            <p><a href="https://speakerdeck.com/t_pori418">Speaker Deck</a></p><br>
+            <p><a href="https://twitter.com/t_pori418?lang=ja">Twitter</a></p><br>
+            <p><a href="https://poriweb.hatenablog.com/">Blog</a></p><br>
+            <p><a href="https://teratail.com/users/thori">teratail</a></p><br>
           </div>
           <div class="infomation">
             <h1 class="title">
@@ -85,6 +85,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+a {
+  background: royalblue;
+  border-radius: 4px;
+  padding: 8px;
+}
+
 .has-image-centered {
   margin-left: auto;
   margin-right: auto;
