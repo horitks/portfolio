@@ -28,7 +28,7 @@
                 type="" />
               <span class="infomation-title-text">Profile</span>
             </h1>
-            <p>現在は都内にいますが群馬に行くことも多いです。</p>
+            <p>東京⇄群馬</p>
             <p>業務Webシステム構築/Webサービス開発をしています。</p>
             <p>現在はVue.js/Laravelを使用したSPA/API構成でのwebアプリケーション開発がメインです。また、AWS等を利用したアーキテクト検討/設計/構築等も行なっています。環境構築、DB設計からフロントエンド、サーバーサイド共実装、リリース整備などわりと幅広く触っています。</p>
           </div>
@@ -43,7 +43,7 @@
             <p>AWS/docker/vagrant/nginx/apache http server</p><br>
             <p>MySQL/SQL Server/DynamoDB/Firestore</p><br>
             <p>HTML5/CSS3/scss/JavaScript/TypeScript/PHP/Python</p><br>
-            <p>Vue.js/Nuxt.js/React.js/Angular/Laravel/Django</p><br>
+            <p>Vue.js/Nuxt.js/React.js/Laravel/Django/.NET Core</p><br>
             <p>※ものによって能力に差があります。</p><br>
           </div>
           <div class="infomation">
