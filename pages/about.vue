@@ -14,45 +14,46 @@
           </div>
         </div>
         <div class="column">
-          <div class="infomation">
+          <div class="information">
             <h1 class="title">
-              <span class="infomation-title-text">PORI's Web Site</span>
+              <span class="information-title-text">PORI's Web Site</span>
             </h1>
             <p>このサイトはpori(@t_pori418)の個人サイトです。</p>
           </div>
-          <div class="infomation">
+          <div class="information">
             <h1 class="title">
               <b-icon
                 icon="account"
                 size="is-small"
                 type="" />
-              <span class="infomation-title-text">Profile</span>
+              <span class="information-title-text">Profile</span>
             </h1>
-            <p>東京⇄群馬</p>
-            <p>業務Webシステム構築/Webサービス開発をしています。</p>
-            <p>現在はVue.js/Laravelを使用したSPA/API構成でのwebアプリケーション開発がメインです。また、AWS等を利用したアーキテクト検討/設計/構築等も行なっています。環境構築、DB設計からフロントエンド、サーバーサイド共実装、リリース整備などわりと幅広く触っています。</p>
+            <p>神奈川⇆東京⇄群馬</p>
+            <p>Web Developer</p>
+            <p>シェアリングプラットフォーム事業のサーバーサイドエンジニアをやりつつ、バックオフィス系のSaaSの立ち上げエンジニアをやっています。AWS等を利用したアーキテクト検討/設計/構築等も行なっています。過去の経歴としては環境構築、DB設計からフロントエンド、サーバーサイド共実装、リリース整備などわりと幅広く触っています。</p>
           </div>
-          <div class="infomation">
+          <div class="information">
             <h1 class="title">
               <b-icon
                 icon="lightbulb"
                 size="is-small"
                 type="" />
-              <span class="infomation-title-text">Skill</span>
+              <span class="information-title-text">Skill</span>
             </h1>
-            <p>AWS/docker/vagrant/nginx/apache http server</p><br>
-            <p>MySQL/SQL Server/DynamoDB/Firestore</p><br>
-            <p>HTML5/CSS3/scss/JavaScript/TypeScript/PHP/Python</p><br>
-            <p>Vue.js/Nuxt.js/React.js/Laravel/Django/.NET Core</p><br>
-            <p>※ものによって能力に差があります。</p><br>
+            <p>☆☆☆</p>
+            <p>AWS/docker/MySQL/Laravel/PHP/Python/Vue.js/Nuxt.js/JavaScript/TypeScript</p><br>
+            <p>☆☆</p>
+            <p>SQLServer/DynamoDB/.NET Core/Ruby on Rails/React.js/HTML/CSS</p><br>
+            <p>☆</p>
+            <p>Firebase/Django</p><br>
           </div>
-          <div class="infomation">
+          <div class="information">
             <h1 class="title">
               <b-icon
                 icon="link"
                 size="is-small"
                 type="" />
-              <span class="infomation-title-text">Links</span>
+              <span class="information-title-text">Links</span>
             </h1>
             <p><a href="https://github.com/horitks">github</a></p><br>
             <p><a href="https://speakerdeck.com/t_pori418">Speaker Deck</a></p><br>
@@ -60,13 +61,13 @@
             <p><a href="https://poriweb.hatenablog.com/">Blog</a></p><br>
             <p><a href="https://teratail.com/users/thori">teratail</a></p><br>
           </div>
-          <div class="infomation">
+          <div class="information">
             <h1 class="title">
               <b-icon
                 icon="email"
                 size="is-small"
                 type="" />
-              <span class="infomation-title-text">Contact</span>
+              <span class="information-title-text">Contact</span>
             </h1>
             <p>Email: t.pori418@gmail.com</p>
             <br>
@@ -96,11 +97,11 @@ a {
   margin-right: auto;
 }
 
-.infomation {
+.information {
   margin: 50px 0;
 }
 
-.infomation-title-text {
+.information-title-text {
   margin: 0 10px;
 }
 </style>
