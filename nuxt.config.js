@@ -1,13 +1,16 @@
-const pkg = require('./package')
+export default {
+  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
+  ssr: false,
 
-module.exports = {
-  mode: 'spa',
+  // Target: https://go.nuxtjs.dev/config-target
+  target: 'static',
 
+  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
+    title: 'portfolio',
     htmlAttrs: {
       lang: 'ja'
     },
-    title: pkg.name,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -16,7 +19,7 @@ module.exports = {
         name: 'format-detection',
         content: 'telephone=no, email=no, address=no'
       },
-      { hid: 'description', name: 'description', content: pkg.description },
+      { hid: 'description', name: 'description', content: "pori(@t_pori418)の個人サイトです。開発したもの等を載せていくかもしれません。" },
       {
         hid: 'keywords',
         name: 'keywords',
@@ -24,17 +27,8 @@ module.exports = {
       },
       { hid: 'author', name: 'author', content: 'pori' }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    script: [
-      {
-        src:
-          '//cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js'
-      },
-      { src: '//polyfill.io/v2/polyfill.min.js?features=IntersectionObserver' },
-      {
-        src:
-          '//cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js'
-      }
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
 
@@ -44,42 +38,33 @@ module.exports = {
 
   loading: { color: '#fff' },
 
-  css: [{ src: '@/assets/main.scss', lang: 'scss' }],
+  // Global CSS: https://go.nuxtjs.dev/config-css
+  css: [
+    { src: '@/assets/main.scss', lang: 'scss' }
+  ],
 
+  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/axios',
-    '@/plugins/sanitize',
-    '@/plugins/utils',
+    '~/plugins/utils.js',
     { src: '~plugins/ga.js', ssr: false }
   ],
 
-  modules: [
-    // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios',
-    // Doc: https://buefy.github.io/#/documentation
-    'nuxt-buefy'
+  // Auto import components: https://go.nuxtjs.dev/config-components
+  components: true,
+
+  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+  buildModules: [
+    // https://go.nuxtjs.dev/typescript
+    '@nuxt/typescript-build',
   ],
 
-  axios: {},
+  // Modules: https://go.nuxtjs.dev/config-modules
+  modules: [
+    // https://go.nuxtjs.dev/buefy
+    'nuxt-buefy',
+  ],
 
+  // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    extend(config, ctx) {
-      // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
-    },
-    postcss: {
-      plugins: {
-        'postcss-preset-env': {
-          autoprefixer: { grid: true }
-        }
-      }
-    }
   }
 }
