@@ -18,7 +18,7 @@
       <div class="columns">
         <div class="column">
           <a class="button is-large" href="https://github.com/horitks">
-            <b-icon icon="github-circle" size="is-large" type/>
+            <b-icon icon="github" size="is-large" type/>
             <span>GitHub</span>
           </a>
         </div>
@@ -37,7 +37,7 @@
         <div class="column display-none"/>
         <div class="column">
           <a class="button is-large" href="https://twitter.com/t_pori418?lang=ja">
-            <b-icon icon="twitter-circle" size="is-large" type/>
+            <b-icon icon="twitter" size="is-large" type/>
             <span>Twitter</span>
           </a>
         </div>
