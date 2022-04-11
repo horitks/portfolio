@@ -45,7 +45,7 @@
             <p>☆☆</p>
             <p>SQLServer/DynamoDB/.NET Core/Ruby on Rails/React.js/HTML/CSS</p><br>
             <p>☆</p>
-            <p>Firebase/Django</p><br>
+            <p>Firebase/Django/Go/Angular</p><br>
           </div>
           <div class="information">
             <h1 class="title">
