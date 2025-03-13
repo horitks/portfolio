@@ -1,28 +1,24 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "pori(@t_pori418)の個人サイトです。開発したもの等を載せていきます。主な技術ネタはVue.js/Laravel/AWSなど。",
-  "author": "pori",
-  "private": true,
+  "description": "Portfolio website built with Hono",
+  "type": "module",
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "vite --host",
+    "build": "vite build && node scripts/build-static.js",
+    "preview": "vite preview --host",
+    "clean": "rm -rf dist"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "core-js": "^3.19.3",
-    "nuxt": "^2.13.3",
-    "nuxt-buefy": "^0.4.13",
-    "vue": "^2.6.14",
-    "vue-server-renderer": "^2.6.14",
-    "vue-template-compiler": "^2.6.14",
-    "webpack": "^5.72.0"
+    "hono": "^4.0.0"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.15.8",
-    "@nuxt/typescript-build": "^2.1.0",
-    "sass": "^1.50.0",
-    "sass-loader": "^10.2.1"
+    "@hono/vite-dev-server": "^0.1.0",
+    "@hono/vite-cloudflare-pages": "^0.1.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.4"
   }
 }
