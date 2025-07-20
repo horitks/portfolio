@@ -28,9 +28,8 @@
                 type="" />
               <span class="information-title-text">Profile</span>
             </h1>
-            <p>神奈川⇆東京⇄群馬</p>
-            <p>Web Developer</p>
-            <p>シェアリングプラットフォーム事業のサーバーサイドエンジニアをやりつつ、バックオフィス系のSaaSの立ち上げエンジニアをやっています。AWS等を利用したアーキテクト検討/設計/構築等も行なっています。過去の経歴としては環境構築、DB設計からフロントエンド、サーバーサイド共実装、リリース整備などわりと幅広く触っています。</p>
+            <p>事業会社・テックカンパニーでエンジニアリングマネージャーとして従事</p>
+            <p>特にweb開発を中心として、開発・プロマネ・プロセス設計などいろいろやります。</p>
           </div>
           <div class="information">
             <h1 class="title">
@@ -40,12 +39,10 @@
                 type="" />
               <span class="information-title-text">Skill</span>
             </h1>
-            <p>☆☆☆</p>
-            <p>AWS/docker/MySQL/Laravel/PHP/Python/Vue.js/Nuxt.js/JavaScript/TypeScript</p><br>
-            <p>☆☆</p>
-            <p>SQLServer/DynamoDB/.NET Core/Ruby on Rails/React.js/HTML/CSS</p><br>
-            <p>☆</p>
-            <p>Firebase/Django/Go/Angular</p><br>
+            <p>PHP  Python  JavaScript  TypeScript  Ruby  Go  C#（.NET Core）</p><br>
+            <p>Vue.js  Nuxt.js  React.js  Angular  HTML</p><br>
+            <p>Laravel（PHP）  Django（Python）  Ruby on Rails（Ruby）  .NET Core（C#）</p><br>
+            <p>AWS</p><br>
           </div>
           <div class="information">
             <h1 class="title">
