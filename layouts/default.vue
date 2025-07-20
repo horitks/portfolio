@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Transition name="fade" appear>
+    <transition name="fade" appear>
       <section class="hero is-dark is-fullheight">
         <header class="navbar">
           <div class="container">
@@ -48,7 +48,7 @@
           </div>
         </footer>
       </section>
-    </Transition>
+    </transition>
   </div>
 </template>
 

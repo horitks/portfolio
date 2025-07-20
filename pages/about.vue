@@ -73,11 +73,11 @@ definePageMeta({
 </script>
 
 <style lang="scss" scoped>
-a {
+.information a {
   background: royalblue;
   border-radius: 4px;
   padding: 8px;
-  color: white !important;
+  color: white;
   text-decoration: none;
 }
 
