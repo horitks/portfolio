@@ -71,6 +71,12 @@ typings/
 # Nuxt generate
 dist
 
+# Nuxt 3 build output
+.output
+
+# Netlify build files
+.netlify
+
 # vuepress build output
 .vuepress/dist
 
