@@ -66,4 +66,14 @@ const menuToggle = () => {
 .navbar-item h1 {
   font-size: 28px;
 }
+
+.hero.is-fullheight {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hero-foot {
+  margin-top: auto;
+}
 </style>
