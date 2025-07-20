@@ -5,6 +5,10 @@ export default defineNuxtConfig({
     }
   },
   
+  build: {
+    publicPath: '/_nuxt/'
+  },
+  
   app: {
     head: {
       title: 'portfolio',
