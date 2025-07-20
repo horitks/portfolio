@@ -39,10 +39,12 @@
                 type="" />
               <span class="information-title-text">Skill</span>
             </h1>
-            <p>PHP  Python  JavaScript  TypeScript  Ruby  Go  C#（.NET Core）</p><br>
-            <p>Vue.js  Nuxt.js  React.js  Angular  HTML</p><br>
-            <p>Laravel（PHP）  Django（Python）  Ruby on Rails（Ruby）  .NET Core（C#）</p><br>
-            <p>AWS</p><br>
+            <ul>
+              <li>PHP  Python  JavaScript  TypeScript  Ruby  Go  C#（.NET Core）</li>
+              <li>Vue.js  Nuxt.js  React.js  Angular  HTML</li>
+              <li>Laravel（PHP）  Django（Python）  Ruby on Rails（Ruby）  .NET Core（C#）</li>
+              <li>AWS</li>
+            </ul>
           </div>
           <div class="information">
             <h1 class="title">
@@ -100,5 +102,14 @@ a {
 
 .information-title-text {
   margin: 0 10px;
+}
+
+.information ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.information li {
+  margin-bottom: 8px;
 }
 </style>
