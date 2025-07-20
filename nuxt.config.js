@@ -1,12 +1,9 @@
 export default defineNuxtConfig({
   nitro: {
+    preset: 'static',
     prerender: {
       routes: ['/', '/about']
     }
-  },
-  
-  build: {
-    publicPath: '/_nuxt/'
   },
   
   app: {
