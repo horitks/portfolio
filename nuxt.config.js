@@ -1,7 +1,5 @@
 export default defineNuxtConfig({
-  ssr: false,
   nitro: {
-    preset: 'netlify',
     prerender: {
       routes: ['/', '/about']
     }

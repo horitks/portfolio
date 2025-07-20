@@ -55,7 +55,12 @@
 
 <script setup>
 const { $getDevice } = useNuxtApp()
-const device = computed(() => $getDevice())
+const device = computed(() => {
+  if (process.client && $getDevice) {
+    return $getDevice()
+  }
+  return 'other'
+})
 
 definePageMeta({
   pageTransition: 'slide-left'
