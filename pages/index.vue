@@ -6,19 +6,19 @@
       <div class="columns is-mobile is-centered">
         <div class="column is-narrow">
           <figure class="image is-128x128 main-icon">
-            <router-link to="/about">
+            <NuxtLink to="/about">
               <img class="is-rounded" src="/icons/iconCoffee.jpg">
               <div class="middle">
                 <div>About</div>
               </div>
-            </router-link>
+            </NuxtLink>
           </figure>
         </div>
       </div>
       <div class="columns">
         <div class="column">
           <a class="button is-large" href="https://github.com/horitks">
-            <b-icon icon="github" size="is-large" type/>
+            <Icon name="mdi:github" size="48"/>
             <span>GitHub</span>
           </a>
         </div>
@@ -26,7 +26,7 @@
         <div class="column display-none"/>
         <div class="column">
           <a class="button is-large" href="https://speakerdeck.com/t_pori418">
-            <b-icon icon="message-bulleted" size="is-large" type/>
+            <Icon name="mdi:message-bulleted" size="48"/>
             <span class="is-size-5">Speaker
               <br>Deck
             </span>
@@ -37,13 +37,13 @@
         <div class="column display-none"/>
         <div class="column">
           <a class="button is-large" href="https://twitter.com/t_pori418?lang=ja">
-            <b-icon icon="twitter" size="is-large" type/>
+            <Icon name="mdi:twitter" size="48"/>
             <span>Twitter</span>
           </a>
         </div>
         <div class="column">
           <a class="button is-large" href="https://poriweb.hatenablog.com/">
-            <hatena-icon width="53" height="72"/>
+            <HatenaIcon width="53" height="72"/>
             <span>Blog</span>
           </a>
         </div>
@@ -53,20 +53,13 @@
   </div>
 </template>
 
-<script>
-import HatenaIcon from '@/components/icons/HatenaIcon.vue'
+<script setup>
+const { $getDevice } = useNuxtApp()
+const device = computed(() => $getDevice())
 
-export default {
-  transition: 'slide-left',
-  components: {
-    HatenaIcon
-  },
-  computed: {
-    device() {
-      return this.$getDevice()
-    }
-  }
-}
+definePageMeta({
+  pageTransition: 'slide-left'
+})
 </script>
 
 <style lang="scss" scoped>
