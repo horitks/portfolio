@@ -22,10 +22,7 @@
           </div>
           <div class="information">
             <h1 class="title">
-              <b-icon
-                icon="account"
-                size="is-small"
-                type="" />
+              <Icon name="mdi:account" size="24"/>
               <span class="information-title-text">Profile</span>
             </h1>
             <p>事業会社・テックカンパニーでエンジニアリングマネージャーとして従事</p>
@@ -33,10 +30,7 @@
           </div>
           <div class="information">
             <h1 class="title">
-              <b-icon
-                icon="lightbulb"
-                size="is-small"
-                type="" />
+              <Icon name="mdi:lightbulb" size="24"/>
               <span class="information-title-text">Skill</span>
             </h1>
             <ul>
@@ -48,10 +42,7 @@
           </div>
           <div class="information">
             <h1 class="title">
-              <b-icon
-                icon="link"
-                size="is-small"
-                type="" />
+              <Icon name="mdi:link" size="24"/>
               <span class="information-title-text">Links</span>
             </h1>
             <p><a href="https://github.com/horitks">github</a></p><br>
@@ -62,10 +53,7 @@
           </div>
           <div class="information">
             <h1 class="title">
-              <b-icon
-                icon="email"
-                size="is-small"
-                type="" />
+              <Icon name="mdi:email" size="24"/>
               <span class="information-title-text">Contact</span>
             </h1>
             <p>Email: t.pori418@gmail.com</p>
@@ -78,17 +66,19 @@
   </div>
 </template>
 
-<script>
-export default {
-  transition: 'slide-right'
-}
+<script setup>
+definePageMeta({
+  pageTransition: 'slide-right'
+})
 </script>
 
 <style lang="scss" scoped>
-a {
+.information a {
   background: royalblue;
   border-radius: 4px;
   padding: 8px;
+  color: white;
+  text-decoration: none;
 }
 
 .has-image-centered {

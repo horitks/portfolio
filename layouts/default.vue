@@ -5,9 +5,9 @@
         <header class="navbar">
           <div class="container">
             <div class="navbar-brand">
-              <router-link class="navbar-item" to="/">
+              <NuxtLink class="navbar-item" to="/">
                 <h1>PORIWEB.com</h1>
-              </router-link>
+              </NuxtLink>
               <span
                 :class="{ 'is-active': menuActive }"
                 role="button"
@@ -25,21 +25,21 @@
               :class="{ 'is-active': menuActive }"
               class="navbar-menu">
               <div class="navbar-end">
-                <router-link
-                  :class="{'is-active': $route.path === '/'}"
+                <NuxtLink
+                  :class="{'is-active': route.path === '/'}"
                   class="navbar-item"
                   to="/"
-                >Home</router-link>
-                <router-link
-                  :class="{'is-active': $route.path === '/about'}"
+                >Home</NuxtLink>
+                <NuxtLink
+                  :class="{'is-active': route.path === '/about'}"
                   class="navbar-item"
                   to="/about"
-                >About</router-link>
+                >About</NuxtLink>
               </div>
             </div>
           </div>
         </header>
-        <nuxt/>
+        <slot />
         <footer class="hero-foot">
           <div class="content has-text-centered">
             <small>
@@ -52,18 +52,12 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      menuActive: false
-    }
-  },
-  methods: {
-    menuToggle() {
-      this.menuActive = !this.menuActive
-    }
-  }
+<script setup>
+const route = useRoute()
+const menuActive = ref(false)
+
+const menuToggle = () => {
+  menuActive.value = !menuActive.value
 }
 </script>
 
