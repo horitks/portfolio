@@ -68,10 +68,6 @@ definePageMeta({
 </script>
 
 <style lang="scss" scoped>
-.page-content {
-  padding: 2rem 1rem;
-}
-
 .main-icon {
   cursor: pointer;
 }
@@ -146,10 +142,6 @@ definePageMeta({
 @media screen and (max-width: 768px) {
   .display-none {
     display: none;
-  }
-  
-  .page-content {
-    padding: 1rem 0.5rem;
   }
 }
 </style>

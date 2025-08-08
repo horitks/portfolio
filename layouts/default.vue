@@ -70,7 +70,6 @@ const menuToggle = () => {
 }
 
 .layout-wrapper {
-  min-height: 100vh;
   background-color: #363636;
 }
 
@@ -78,6 +77,7 @@ const menuToggle = () => {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  color: white;
 }
 
 .navbar {
@@ -86,8 +86,6 @@ const menuToggle = () => {
 
 .main-content {
   flex: 1 0 auto;
-  background-color: #363636;
-  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,8 +93,6 @@ const menuToggle = () => {
 
 .footer-fixed {
   flex-shrink: 0;
-  background-color: #363636;
-  color: white;
   padding: 1.5rem 0;
 }
 </style>

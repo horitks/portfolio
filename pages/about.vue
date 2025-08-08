@@ -1,7 +1,7 @@
 <template>
   <div class="page-content">
     <div class="container">
-      <div class="columns is-1 is-horizontal-center">
+      <div class="columns is-1 is-horizontal-center about-columns">
         <div class="column is-two-fifths">
           <div class="has-text-centered">
             <figure class="image is-128x128 has-image-centered">
@@ -73,10 +73,6 @@ definePageMeta({
 </script>
 
 <style lang="scss" scoped>
-.page-content {
-  padding: 2rem 1rem;
-}
-
 .information a {
   background: royalblue;
   border-radius: 4px;
@@ -108,11 +104,7 @@ definePageMeta({
 }
 
 @media screen and (max-width: 768px) {
-  .page-content {
-    padding: 1rem 0.5rem;
-  }
-  
-  .columns.is-1.is-horizontal-center {
+  .about-columns {
     flex-direction: column;
   }
   
