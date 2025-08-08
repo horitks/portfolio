@@ -86,9 +86,6 @@ const menuToggle = () => {
 
 .main-content {
   flex: 1 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .footer-fixed {
