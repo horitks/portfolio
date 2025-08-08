@@ -1,5 +1,5 @@
 <template>
-  <div class="hero-body">
+  <div class="page-content">
     <div class="container">
       <div class="columns is-1 is-horizontal-center">
         <div class="column is-two-fifths">
@@ -73,6 +73,10 @@ definePageMeta({
 </script>
 
 <style lang="scss" scoped>
+.page-content {
+  padding: 2rem 1rem;
+}
+
 .information a {
   background: royalblue;
   border-radius: 4px;
@@ -101,5 +105,19 @@ definePageMeta({
 
 .information li {
   margin-bottom: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .page-content {
+    padding: 1rem 0.5rem;
+  }
+  
+  .columns.is-1.is-horizontal-center {
+    flex-direction: column;
+  }
+  
+  .information {
+    margin: 30px 0;
+  }
 }
 </style>

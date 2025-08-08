@@ -1,5 +1,5 @@
 <template>
-  <div class="hero-body">
+  <div class="page-content">
     <div
       :class="{ 'smart-device': device !== 'other' }"
       class="container has-text-centered">
@@ -68,6 +68,10 @@ definePageMeta({
 </script>
 
 <style lang="scss" scoped>
+.page-content {
+  padding: 2rem 1rem;
+}
+
 .main-icon {
   cursor: pointer;
 }
@@ -142,6 +146,10 @@ definePageMeta({
 @media screen and (max-width: 768px) {
   .display-none {
     display: none;
+  }
+  
+  .page-content {
+    padding: 1rem 0.5rem;
   }
 }
 </style>
