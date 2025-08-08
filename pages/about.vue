@@ -119,7 +119,7 @@ definePageMeta({
   .about-columns {
     flex-direction: column;
   }
-  
+
   .information {
     margin: 30px 0;
   }
