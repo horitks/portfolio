@@ -7,7 +7,6 @@
             <figure class="image is-128x128 has-image-centered">
               <img src="/icons/iconCoffee.jpg">
             </figure>
-            <br>
             <h1 class="title">
               Takashi Hori
             </h1>
@@ -45,11 +44,13 @@
               <Icon name="mdi:link" size="24"/>
               <span class="information-title-text">Links</span>
             </h1>
-            <p><a href="https://github.com/horitks">github</a></p><br>
-            <p><a href="https://speakerdeck.com/t_pori418">Speaker Deck</a></p><br>
-            <p><a href="https://twitter.com/t_pori418?lang=ja">X (Twitter)</a></p><br>
-            <p><a href="https://poriweb.hatenablog.com/">Blog</a></p><br>
-            <p><a href="https://teratail.com/users/thori">teratail</a></p><br>
+            <ul>
+              <li><a href="https://github.com/horitks">github</a></li>
+              <li><a href="https://speakerdeck.com/t_pori418">Speaker Deck</a></li>
+              <li><a href="https://twitter.com/t_pori418?lang=ja">X (Twitter)</a></li>
+              <li><a href="https://poriweb.hatenablog.com/">Blog</a></li>
+              <li><a href="https://teratail.com/users/thori">teratail</a></li>
+            </ul>
           </div>
           <div class="information">
             <h1 class="title">
@@ -57,7 +58,6 @@
               <span class="information-title-text">Contact</span>
             </h1>
             <p>Email: t.pori418@gmail.com</p>
-            <br>
             <p>or <a href="https://twitter.com/t_pori418?lang=ja">X (Twitter)</a> DM</p>
           </div>
         </div>
@@ -86,6 +86,10 @@ definePageMeta({
   margin-right: auto;
 }
 
+.has-text-centered h1.title {
+  margin-top: 1rem; /* replace <br> after profile image */
+}
+
 .information {
   margin: 50px 0;
 }
@@ -94,13 +98,21 @@ definePageMeta({
   margin: 0 10px;
 }
 
+.information p {
+  margin: 0; /* reset to control spacing consistently */
+}
+
+.information p + p {
+  margin-top: 8px; /* replace <br> between paragraphs */
+}
+
 .information ul {
   list-style-type: none;
   padding: 0;
 }
 
 .information li {
-  margin-bottom: 8px;
+  margin-bottom: 24px;
 }
 
 @media screen and (max-width: 768px) {
