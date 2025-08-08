@@ -1,7 +1,7 @@
 <template>
-  <div class="hero-body">
+  <div class="page-content">
     <div class="container">
-      <div class="columns is-1 is-horizontal-center">
+      <div class="columns is-1 is-horizontal-center about-columns">
         <div class="column is-two-fifths">
           <div class="has-text-centered">
             <figure class="image is-128x128 has-image-centered">
@@ -101,5 +101,15 @@ definePageMeta({
 
 .information li {
   margin-bottom: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-columns {
+    flex-direction: column;
+  }
+  
+  .information {
+    margin: 30px 0;
+  }
 }
 </style>

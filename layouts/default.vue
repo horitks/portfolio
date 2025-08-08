@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="layout-wrapper">
     <transition name="fade" appear>
-      <section class="hero is-dark is-fullheight">
-        <header class="navbar">
+      <div class="layout-container">
+        <header class="navbar is-dark">
           <div class="container">
             <div class="navbar-brand">
               <NuxtLink class="navbar-item" to="/">
@@ -39,15 +39,17 @@
             </div>
           </div>
         </header>
-        <slot />
-        <footer class="hero-foot">
+        <main class="main-content">
+          <slot />
+        </main>
+        <footer class="footer-fixed">
           <div class="content has-text-centered">
             <small>
               Copyright © Takashi Hori All Rights Reserved.
             </small>
           </div>
         </footer>
-      </section>
+      </div>
     </transition>
   </div>
 </template>
@@ -67,13 +69,27 @@ const menuToggle = () => {
   font-size: 28px;
 }
 
-.hero.is-fullheight {
+.layout-wrapper {
+  background-color: #363636;
+}
+
+.layout-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  color: white;
 }
 
-.hero-foot {
-  margin-top: auto;
+.navbar {
+  flex-shrink: 0;
+}
+
+.main-content {
+  flex: 1 0 auto;
+}
+
+.footer-fixed {
+  flex-shrink: 0;
+  padding: 1.5rem 0;
 }
 </style>

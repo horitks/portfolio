@@ -107,3 +107,14 @@ p {
 .container {
   width: 100%;
 }
+
+/* page content */
+.page-content {
+  padding: 2rem 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .page-content {
+    padding: 1rem 0.5rem;
+  }
+}

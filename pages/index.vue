@@ -1,5 +1,5 @@
 <template>
-  <div class="hero-body">
+  <div class="page-content">
     <div
       :class="{ 'smart-device': device !== 'other' }"
       class="container has-text-centered">
