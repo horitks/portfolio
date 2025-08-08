@@ -38,7 +38,7 @@
         <div class="column">
           <a class="button is-large" href="https://twitter.com/t_pori418?lang=ja">
             <Icon name="mdi:twitter" size="48"/>
-            <span>Twitter</span>
+            <span>X (Twitter)</span>
           </a>
         </div>
         <div class="column">

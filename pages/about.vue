@@ -47,7 +47,7 @@
             </h1>
             <p><a href="https://github.com/horitks">github</a></p><br>
             <p><a href="https://speakerdeck.com/t_pori418">Speaker Deck</a></p><br>
-            <p><a href="https://twitter.com/t_pori418?lang=ja">Twitter</a></p><br>
+            <p><a href="https://twitter.com/t_pori418?lang=ja">X (Twitter)</a></p><br>
             <p><a href="https://poriweb.hatenablog.com/">Blog</a></p><br>
             <p><a href="https://teratail.com/users/thori">teratail</a></p><br>
           </div>
@@ -58,7 +58,7 @@
             </h1>
             <p>Email: t.pori418@gmail.com</p>
             <br>
-            <p>or <a href="https://twitter.com/t_pori418?lang=ja">Twitter</a> DM</p>
+            <p>or <a href="https://twitter.com/t_pori418?lang=ja">X (Twitter)</a> DM</p>
           </div>
         </div>
       </div>
